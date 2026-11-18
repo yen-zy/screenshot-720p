@@ -6,6 +6,8 @@
 	<string>Screenshot 720p Converter</string>
 	<key>CFBundleExecutable</key>
 	<string>ConverterLauncher</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>local.yen.screenshot720p</string>
 	<key>CFBundleName</key>

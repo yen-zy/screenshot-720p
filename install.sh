@@ -23,6 +23,7 @@ swiftc -O -module-cache-path "$ROOT/build/module-cache" -o "$BUILT/Contents/MacO
     "$ROOT/src/main.swift" "$ROOT/src/ProgressPanel.swift" "$ROOT/src/Notifier.swift"
 cp "$ROOT/support/Info.plist" "$BUILT/Contents/Info.plist"
 cp "$ROOT/src/screenshot_720p.py" "$BUILT/Contents/Resources/screenshot_720p.py"
+cp "$ROOT/support/AppIcon.icns" "$BUILT/Contents/Resources/AppIcon.icns"
 codesign --force --sign - --identifier "$LABEL" "$BUILT"
 codesign --verify --deep --strict "$BUILT"
 echo "    built $BUILT"

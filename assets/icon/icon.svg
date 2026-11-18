@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Screenshot 720p Converter app icon, on Apple's 1024 macOS grid:
+       an 824pt rounded square inset 100pt, artwork kept to the middle 80%.
+       A large faint frame (the original) with arrows pressing in on a
+       smaller white frame (the 720p copy), and the green 720 badge the
+       progress panel uses for Done. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3D9DFF"/>
+      <stop offset="0.55" stop-color="#1F63E6"/>
+      <stop offset="1" stop-color="#2B3FC4"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.28"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E4EDFF"/>
+    </linearGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BD866"/>
+      <stop offset="1" stop-color="#1FAE48"/>
+    </linearGradient>
+    <filter id="tile-shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0A1E6E" flood-opacity="0.38"/>
+    </filter>
+    <clipPath id="tile">
+      <rect x="100" y="100" width="824" height="824" rx="186"/>
+    </clipPath>
+  </defs>
+
+  <!-- Tile -->
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)" filter="url(#tile-shadow)"/>
+  <g clip-path="url(#tile)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#sheen)"/>
+  </g>
+  <rect x="100.5" y="100.5" width="823" height="823" rx="185.5" fill="none" stroke="#fff" stroke-opacity="0.18" stroke-width="1"/>
+
+  <!-- The original: a large faint frame -->
+  <rect x="212" y="222" width="600" height="400" rx="64" fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="12"/>
+
+  <!-- Arrows pressing in from each corner -->
+  <g stroke="#fff" stroke-opacity="0.9" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M246 252 L286 278 M286 278 L256 280 M286 278 L276 250"/>
+    <path d="M778 252 L738 278 M738 278 L768 280 M738 278 L748 250"/>
+    <path d="M246 592 L286 566 M286 566 L256 564 M286 566 L276 594"/>
+    <path d="M778 592 L738 566 M738 566 L768 564 M738 566 L748 594"/>
+  </g>
+
+  <!-- The 720p copy: a smaller white frame with a play mark -->
+  <rect x="302" y="282" width="420" height="280" rx="44" fill="url(#card)" filter="url(#lift)"/>
+  <path d="M492 380 L492 464 L560 422 Z" fill="#1F63E6" stroke="#1F63E6" stroke-width="18" stroke-linejoin="round"/>
+
+  <!-- 720 badge -->
+  <g filter="url(#lift)">
+    <rect x="372" y="672" width="280" height="116" rx="58" fill="url(#pill)"/>
+  </g>
+  <rect x="373" y="673" width="278" height="114" rx="57" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="512" y="759" text-anchor="middle" font-family="-apple-system, 'SF Pro Display', system-ui, sans-serif" font-weight="800" font-size="86" letter-spacing="1" fill="#fff">720</text>
+</svg>

@@ -1,3 +1,5 @@
+<img src="assets/icon/icon-1024.png" width="128" align="right" alt="App icon">
+
 # Screenshot 720p Converter
 
 A small macOS background app that watches `~/Documents/Screenshot` and, whenever a
@@ -71,7 +73,8 @@ FSEvents ─▶ ConverterLauncher (Swift, AppKit)
 | `src/ProgressPanel.swift` | The floating progress window |
 | `src/Notifier.swift` | Notifications |
 | `src/screenshot_720p.py` | Worker: scan, convert, verify, emit progress |
-| `support/` | App `Info.plist` and the launch agent plist |
+| `support/` | App `Info.plist`, `AppIcon.icns` and the launch agent plist |
+| `assets/icon/` | Icon source (`icon.svg`), `render.mjs` → PNG, `make-icns.sh` → `AppIcon.icns` |
 | `tests/test_events.py` | End-to-end tests of the worker's events |
 | `docs/` | Design spec, plan and mockups |
 
