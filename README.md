@@ -1,16 +1,21 @@
-<img src="assets/icon/icon-1024.png" width="128" align="right" alt="App icon">
+<p align="center">
+  <img src="assets/icon/icon-1024.png" width="160" alt="Screenshot 720p Converter icon">
+</p>
 
-# Screenshot 720p Converter
+<h1 align="center">Screenshot 720p Converter</h1>
 
-A small macOS background app that watches `~/Documents/Screenshot` and, whenever a
-video lands there, saves a compressed **720p H.264 copy** into `Screenshot/720p/`.
-Originals are never touched.
+<p align="center">
+  A small macOS background app that watches <code>~/Documents/Screenshot</code> and, whenever a
+  video lands there, saves a compressed <b>720p H.264 copy</b> into <code>Screenshot/720p/</code>.
+  Originals are never touched.
+</p>
 
-<p>
+<p align="center">
   <img src="docs/design/panel-converting.png" width="49%" alt="Floating panel while converting">
   <img src="docs/design/panel-done.png" width="49%" alt="Floating panel when done">
+  <br>
+  <sub>The floating progress panel while converting and when done (design mockup at 1.5×).</sub>
 </p>
-<sub>Design mockup at 1.5× over a desktop corner.</sub>
 
 ## Features
 
